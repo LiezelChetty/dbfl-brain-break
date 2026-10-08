@@ -1,6 +1,6 @@
 # Staff-only leaderboard setup
 
-The game site is public. Staff identities and rankings must remain in Microsoft 365, restricted to DBFL staff. The games currently copy completed results; Form submission is not connected yet.
+The game site is public. Staff identities and rankings must remain in Microsoft 365, restricted to DBFL staff. Completed eligible games now open the supplied Form with game, result, level and hints pre-filled. Staff still review and submit the Form. The SharePoint list and Power Automate flow are not connected or created by this code change.
 
 ## 1. Microsoft Form
 
@@ -14,7 +14,7 @@ Settings:
 Questions (required):
 1. Game — choice: Match & Unwind / Find Your Path / Memory Moment
 2. Result — text, restricted to a positive number. Enter matching points, path seconds or memory turns.
-3. Level — choice: 60-second challenge / 5 x 5 / 6 x 6 / 7 x 7 / 8 pairs
+3. Level — choice: 60-second challenge / 5×5 / 6×6 / 7×7 / 8 pairs
 4. Hints used — choice: No / Yes
 
 Intro: Submit a completed game result. Matching entries must use the 60-second mode. Path entries must be completed without hints. Compare path results only within the same grid size.
@@ -39,9 +39,9 @@ Staff may read rankings; only list owners and the automation account should edit
 
 Views:
 - Match & Unwind: Game equals Match & Unwind, Level equals 60-second challenge, sort Result descending.
-- Path 5 x 5: Game equals Find Your Path, Level equals 5 x 5, sort Result ascending.
-- Path 6 x 6: same filter for 6 x 6, sort Result ascending.
-- Path 7 x 7: same filter for 7 x 7, sort Result ascending.
+- Path 5×5: Game equals Find Your Path, Level equals 5×5, sort Result ascending.
+- Path 6×6: same filter for 6×6, sort Result ascending.
+- Path 7×7: same filter for 7×7, sort Result ascending.
 - Memory Moment: Game equals Memory Moment, Level equals 8 pairs, sort Result ascending.
 Show Title as Player, Result and AchievedAt. Use AchievedAt ascending as a tie-break sort. Keep email and EntryKey out of displayed views.
 

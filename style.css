@@ -3,3 +3,5 @@
 .dbfl-logo{width:210px;height:auto;display:block}.esf-slogan{width:min(355px,85%);height:auto;display:block;margin:36px auto 20px}@media(max-width:720px){.dbfl-logo{width:150px}.brand{gap:24px}.brand span{max-width:115px;text-align:right;line-height:1.6}}
 
 .hero{width:100vw;margin-left:calc(50% - 50vw);padding:45px max(28px,calc((100vw - 1064px)/2)) 40px;background:#10364d;margin-bottom:28px}.hero-play{display:inline-block;text-decoration:none;margin-top:10px}.result-note{font-size:13px;color:var(--muted)}@media(max-width:720px){.hero{padding:32px 22px 30px}}
+
+.submit-result{display:inline-block;text-decoration:none;margin:12px 0 6px}.result .result-note{font-size:12px;margin-top:10px}
